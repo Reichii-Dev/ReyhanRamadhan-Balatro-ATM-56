@@ -1,0 +1,26 @@
+=== CARD RUN GAME — Design Pattern Demo ===
+
+[ Factory Pattern ]
+Created: Flat Boost — Adds +50 flat points to score
+Created: Double Boost — Doubles your current score (x2)
+Created: Square Surge — Squares your score (score x score) — extremely powerful!
+
+[ Strategy Pattern + Decorator Chain ]
+Hand: [ 10 8 6 4 2 ]
+
+-- No modifiers --
+  Base score (Sum Score): 30
+Final: 30
+
+-- With [Flat Boost] then [Double Boost] --
+  Base score (Sum Score): 30
+  [Flat Boost] 30 -> 80
+  [Double Boost] 80 -> 160
+Final: 160
+
+-- Strategy swap: High Card Score, with [Double Boost] --
+  Base score (High Card Score): 10
+  [Double Boost] 10 -> 20
+Final: 20
+
+=== Demo Complete ===
