@@ -123,7 +123,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ReyhanRamadhan-Balatro-ATM-56.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\ModifierFactory.cpp" />
+    <ClCompile Include="src\RunSession.cpp" />
+    <ClCompile Include="src\ScoringSystem.cpp" />
+    <ClCompile Include="src\ShopSystem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ModifierFactory.h" />
+    <ClInclude Include="src\modifiers\DoubleScoreModifier.h" />
+    <ClInclude Include="src\modifiers\FlatBonusModifier.h" />
+    <ClInclude Include="src\modifiers\IModifier.h" />
+    <ClInclude Include="src\modifiers\SquareScoreModifier.h" />
+    <ClInclude Include="src\RunSession.h" />
+    <ClInclude Include="src\ScoringSystem.h" />
+    <ClInclude Include="src\ShopSystem.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
