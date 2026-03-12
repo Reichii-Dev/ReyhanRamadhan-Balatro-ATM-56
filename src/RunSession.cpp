@@ -8,8 +8,8 @@
 RunSession::RunSession()
     : currentRound_(1),
       totalRounds_(3),
-      blindTarget_(100),
-      blindScaling_(80),
+      blindTarget_(25),
+      blindScaling_(15),
       scoringSystem_(std::make_shared<SumScoringStrategy>())
 {}
 
@@ -22,7 +22,7 @@ void RunSession::start() {
 
     std::cout << "\n";
     std::cout << "##############################################\n";
-    std::cout << "#     CARD RUN GAME  —  Balatro-Inspired     #\n";
+    std::cout << "#     CARD RUN GAME  -  Balatro-Inspired     #\n";
     std::cout << "##############################################\n";
     std::cout << "Survive " << totalRounds_ << " rounds by beating the blind score!\n\n";
 
